@@ -1,3 +1,4 @@
+This unified multi-project platform serves as an autonomous QA and collaborative ecosystem that syncs Jira user stories and bugs, utilizing an interactive voice clarification tool to resolve requirement doubts before automatically generating comprehensive test cases and automation scripts in both Playwright and Selenium. Backed by a Gap Analysis tool to uncover missing logic and a native Execution IDE to run generated code directly, the platform features a specialized "Memorise Me" hub that automatically discovers and connects entirely separate projects sharing similar functional domains, such as linking distinct systems through their shared fuel efficiency modules. This cross-project intelligence seamlessly drives an integrated scheduling workspace that aggregates team calendars from Google and MS Teams into an interactive hourly availability matrix for instant, conflict-free booking and real-time team notifications.
 
 Memory 
 

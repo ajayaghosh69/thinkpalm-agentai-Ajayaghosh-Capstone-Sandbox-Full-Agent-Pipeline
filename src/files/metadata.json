@@ -1,0 +1,6 @@
+{
+  "name": "TAXAJ Automated Testing Hub",
+  "description": "An automated QA testing and project story converter with real-time voice verification, Playwright test suite compiler, and Gap Discovery analysis.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

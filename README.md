@@ -22,7 +22,7 @@ Working UI: You have a functional web interface hosted on AI Studio, providing u
 This contains everything you need to run your app locally.
 
 
-View your app in AI Studio: https://ai.studio/apps/54c986f0-8dbb-45bf-b17b-41646a388d66
+View your app in AI Studio: https://thinkpalm-agentai-ajayaghosh-capstone-sandbox-full-r14352tq4.vercel.app
 
 ## Run Locally
 

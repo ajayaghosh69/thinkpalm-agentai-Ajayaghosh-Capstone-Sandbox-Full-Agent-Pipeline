@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Animation for the background memory particles */
+@keyframes float-memory-refined {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.8;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(60px, -220px);
+    opacity: 0;
+  }
+}
+
+/* Container Background */
+.min-h-screen {
+  background: radial-gradient(circle at 50% 0%, #1a1a2e 0%, #0a0a0c 100%) !important;
+}
+
+/* Glass Panels (Calendar/Chat/Dashboard) */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+}
+
+/* Tactical HUD corners */
+.hud-corner {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-color: rgba(139, 92, 246, 0.45);
+  border-style: solid;
+  pointer-events: none;
+}
+.hud-corner-tl { top: 6px; left: 6px; border-width: 1.5px 0 0 1.5px; }
+.hud-corner-tr { top: 6px; right: 6px; border-width: 1.5px 1.5px 0 0; }
+.hud-corner-bl { bottom: 6px; left: 6px; border-width: 0 0 1.5px 1.5px; }
+.hud-corner-br { bottom: 6px; right: 6px; border-width: 0 1.5px 1.5px 0; }
+
+/* Scanning HUD Animation */
+@keyframes scan {
+  0% { transform: translateY(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(400px); opacity: 0; }
+}
+
+.hud-scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.6), transparent);
+  animation: scan 6s linear infinite;
+  pointer-events: none;
+}
+
+/* Futuristic UI Styles for chat container */
+.chat-container {
+  height: 500px;
+  min-height: 500px;
+  max-height: 500px;
+  background: linear-gradient(145deg, #0d0d12 0%, #08080a 100%);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  box-shadow: 0 0 20px rgba(0,0,0,0.4), inset 0 0 15px rgba(99, 102, 241, 0.05);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  color: #3f3f46;
+  letter-spacing: 1px;
+  padding-top: 12px;
+  font-family: monospace;
+}
